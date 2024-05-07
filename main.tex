@@ -18,7 +18,8 @@
 % }
 
 \addbibresource{reference.bib}
-
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{2061}{}
 \begin{document}
 
 \section{An anonymous authenticated key-agreement scheme for multi-server infrastructure}
@@ -73,16 +74,15 @@ Theorem THM1 Consider Di as a uniformly distributed dictionary consists of vario
 \centering
 
  \[
- A_П(A)≤ \frac{(q_h+q_e)^2}{2} + \frac{q_h^2}{2} + \frac{q_h}{p}
- \]  \\
+ A \leq \frac{(q_h+q_e)^2}{2} + \frac{q_h^2}{2} + \frac{q_h}{p}  \]  \\
 where the possibility of solving the ECCDH problem by A, is denoted by AECCDH ­. The number of Execute, Random-oracle and Send query are \{qexe, qhsh, qsnd\}, respectively.
 
-Proof In order to give the proof of Theorem THM1, six composite games are considered from game G1 to G6. The game will be started where the real attack is simulated and a game will be ended where adversary A has no advantage. The possibility of successfully guessing the random bit b in test-query by A is denoted by Suci for each game Gi, where 1≤i≤6.
+Proof In order to give the proof of Theorem THM1, six composite games are considered from game G1 to G6. The game will be started where the real attack is simulated and a game will be ended where adversary A has no advantage. The possibility of successfully guessing the random bit b in test-query by A is denoted by Suci for each game Gi, where $1 \leq i \leq 6$.
 \centering
 
  \[
-  A_{(П,D)}^{ECCDH}(A)=2 \times Pr⁡(Suc1)-1,
- \] \\
+ A_{(D)}^{ECCDH}(A) = 2 \cdot Pr_{⁡(Suc1)}-1 \]
+
 Where   – adversare;
 
 Suc1 – possibility of successfully guessing;
@@ -95,7 +95,7 @@ GAME G1: In this random oracle model, the real attacks are simulated with the he
 
 Table 1 - Comparison of security parameters
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 
 \begin{tabular}{| l | l | l | l | l | l | l |}
@@ -121,7 +121,7 @@ Immune to KCI attack & Yes & Yes & No & Yes & No & Yes \\
 
 The chaotic map-based authentication protocols can be seen in the research literature and these Chaotic-encryption-based techniques are still being adopted as a tradeoff between security and computational cost. We can see few chaotic map variants, i.e., symmetric, asymmetric, and one-way hash functions, as being used in cryptography; however, most of the chaotic map-based techniques are following symmetric cryptosystems. For better understanding, some of the properties of Chebyshev polynomial and chaotic maps are defined as under:
 
-Definition 1 To describe the first property of Chebyshev polynomial, we assume n as an integer, and a variable x of the interval [−1, 1]. While, we define the Chebyshev polynomial \(T_{n}(x): [−1, 1] → [−1, 1]\) as the first few Chebyshev polynomials are listed as below \href{3}{[3]} :
+Definition 1 To describe the first property of Chebyshev polynomial, we assume n as an integer, and a variable x of the interval $[−1, 1]$ While, we define the Chebyshev polynomial \(T_{n}(x): [−1, 1] \longrightarrow  [−1, 1]\) as the first few Chebyshev polynomials are listed as below \href{3}{[3]} :
 \centering
 
    \[\left\{
